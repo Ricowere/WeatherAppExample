@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherInCityViewController" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="todayLabel" destination="LY6-O4-JNL" id="4eU-zI-9hZ"/>
+                <outlet property="todayTempLabel" destination="cf0-A4-C1l" id="sbU-Og-zWA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weekTableView" destination="1AA-hA-bU6" id="uhk-AF-RSf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf0-A4-C1l">
+                    <rect key="frame" x="269" y="164" width="63.5" height="48"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY6-O4-JNL">
+                    <rect key="frame" x="246" y="100" width="108" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1AA-hA-bU6">
+                    <rect key="frame" x="0.0" y="262" width="600" height="338"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1AA-hA-bU6" firstAttribute="top" secondItem="cf0-A4-C1l" secondAttribute="bottom" constant="50" id="EBo-4g-ZJ8"/>
+                <constraint firstItem="LY6-O4-JNL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="KeQ-FS-jgu"/>
+                <constraint firstAttribute="bottom" secondItem="1AA-hA-bU6" secondAttribute="bottom" id="YRH-Wt-C7f"/>
+                <constraint firstItem="cf0-A4-C1l" firstAttribute="centerX" secondItem="LY6-O4-JNL" secondAttribute="centerX" id="ZeA-64-gE4"/>
+                <constraint firstItem="1AA-hA-bU6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l8b-uK-J4G"/>
+                <constraint firstItem="cf0-A4-C1l" firstAttribute="top" secondItem="LY6-O4-JNL" secondAttribute="bottom" constant="28" id="rsf-n4-Idm"/>
+                <constraint firstAttribute="trailing" secondItem="1AA-hA-bU6" secondAttribute="trailing" id="wRD-Ux-qBw"/>
+                <constraint firstItem="LY6-O4-JNL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yFd-en-2Yi"/>
+            </constraints>
+            <point key="canvasLocation" x="18" y="269"/>
+        </view>
+    </objects>
+</document>
